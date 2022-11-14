@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Star Coffee</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="header">
+   <section class="flex">
+      <a href="#home" class="logo"><img src="images/logo.png" alt=""></a>
+      <nav class="navbar">
+         <a href="#home">Главная</a>
+         <a href="#about">О нас</a>
+         <a href="#menu">Кофе</a>
+         <a href="#gallery">Кофейня</a>
+         <a href="#team">Команда</a>
+         <a href="#booking">Бронирование</a>
+         <a href="#contact">Контакты</a>
+      </nav>
+      <div id="menu-btn" class="fas fa-bars"></div>
+   </section>
+</header>
+<div class="home-bg">
+   <section class="home" id="home">
+      <div class="content">
+         <h3>Star Coffee</h3>
+         <a href="#about" class="btn">О нас</a>
+         <video class="home-bg-video" muted autoplay loop src="images/home-bg.mp4"></video>
+      </div>
+   </section>
+</div>
+<section class="about" id="about">
+   <div class="image">
+      <img src="images/about-img.jpg" alt="">
+   </div>
+   <div class="content">
+      <h3>Лучшие истории рассказывают за чашечкой кофе...</h3>
+      <p>Ради кофе можно пойти на всё. Даже на работу. (Билл Гейтс)</p>
+      <a href="#menu" class="btn">Кофе</a>
+   </div>
+</section>
+<section class="facility">
+   <div class="heading">
+      <img src="images/heading-img.png" alt="">
+      <h3>Для вас</h3>
+   </div>
+   <div class="box-container">
+      <div class="box">
+         <img src="images/icon-1.png" alt="">
+         <h3>Лучший и самый вкусный кофе в Твери</h3>
+      </div>
+      <div class="box">
+         <img src="images/icon-2.png" alt="">
+         <h3>Кофе в зернах для дома и офиса</h3>
+      </div>
+      <div class="box">
+         <img src="images/icon-3.png" alt="">
+         <h3>Лучшие завтраки в нашем городе</h3>
+      </div>
+      <div class="box">
+         <img src="images/icon-4.png" alt="">
+         <h3>Кофе с собой для самых активных</h3>
+      </div>
+   </div>
+</section>
+<section class="menu" id="menu">
+   <div class="heading">
+      <img src="images/heading-img.png" alt="">
+      <h3>Популярные позиции</h3>
+   </div>
+   <div class="box-container">
+      <div class="box">
+         <img src="images/menu-1.png" alt="">
+         <h3>Латте</h3>
+      </div>
+      <div class="box">
+         <img src="images/menu-2.png" alt="">
+         <h3>Капучино</h3>
+      </div>
+      <div class="box">
+         <img src="images/menu-3.png" alt="">
+         <h3>Маккиато</h3>
+      </div>
+      <div class="box">
+         <img src="images/menu-4.png" alt="">
+         <h3>Фраппучино</h3>
+      </div>
+      <div class="box">
+         <img src="images/menu-5.png" alt="">
+         <h3>Эспрессо</h3>
+      </div>
+      <div class="box">
+         <img src="images/menu-6.png" alt="">
+         <h3>Гляссе</h3>
+      </div>
+   </div>
+</section>
+<section class="gallery" id="gallery">
+   <div class="heading">
+      <img src="images/heading-img.png" alt="">
+      <h3>Наша кофейня</h3>
+   </div>
+   <div class="box-container">
+      <img src="images/gallery-1.jpg" alt="">
+      <img src="images/gallery-2.jpg" alt="">
+      <img src="images/gallery-3.jpg" alt="">
+      <img src="images/gallery-4.jpg" alt="">
+      <img src="images/gallery-5.jpg" alt="">
+      <img src="images/gallery-6.jpg" alt="">
+   </div>
+</section>
+<section class="team" id="team">
+   <div class="heading">
+      <img src="images/heading-img.png" alt="">
+      <h3>Наша команда</h3>
+   </div>
+   <div class="box-container">
+      <div class="box">
+         <img src="images/our-team-1.jpg" alt="">
+         <h3>Roberta Johnson</h3>
+      </div>
+      <div class="box">
+         <img src="images/our-team-2.jpg" alt="">
+         <h3>Vanessa Taylor</h3>
+      </div>
+      <div class="box">
+         <img src="images/our-team-3.jpg" alt="">
+         <h3>Michael Taylor</h3>
+      </div>
+   </div>
+</section>
+<section class="booking" id="booking">
+   <div class="heading">
+      <img src="images/heading-img.png" alt="">
+      <h3>Бронирование</h3>
+   </div>
+   <div class="row">
+      <div class="image">
+         <img src="images/contact-img.png" alt="">
+      </div>
+      <form action="" method="post">
+         <h3>Забронировать столик</h3>
+         <input type="text" name="name" required class="box" maxlength="20" placeholder="Введите ваше имя...">
+         <input type="number" name="number" required class="box" maxlength="20" placeholder="Введите ваш номер..." min="0" max="9999999999" onkeypress="if(this.value.length == 10) return false">
+         <input type="number" name="guests" required class="box" maxlength="20" placeholder="Сколько гостей нам ждать..." min="0" max="99" onkeypress="if(this.value.length == 2) return false">
+         <input type="submit" name="send" value="Отправить" class="btn">
+      </form>
+   </div>
+</section>
+  <section class="contact" id="contact">
+            <div class="heading">
+               <img src="images/heading-img.png" alt="">
+               <h3>Контакты</h3>
+            </div>
+         <div class="box-container">
+      <div class="box">
+         <a class="fas fa-map-marker-alt" href=" https://2gis.ru/tver/geo/6615297607879555/35.911577%2C56.858364?m=35.911619%2C56.858228%2F19.23"></a>
+         <h3>Наш адрес</h3>
+         <p>170100, Россия, г. Тверь, ул. Новоторжская, д. 14</p>
+      </div>
+      <div class="box">
+         <a class="fas fa-clock"></a>
+         <h3>Мы работаем для вас</h3>
+         <p>с 07:00 до 23:00</p>
+      </div>
+      <div class="box">
+         <a class="fas fa-phone"></a>
+         <h3>Наш номер</h3>
+         <p>+7(4822)00-00-00</p>
+      </div>
+      <div class="box">
+         <a class="fas fa-envelope"></a>
+         <h3>Наш e-mail</h3>
+         <p>StarCoffee@mail.com</p>
+      </div>
+      <div class="box">
+         <a class="fab fa-instagram" href="https://instagram.com"></a>
+         <h3>Мы в Instagram</h3>
+      </div>
+      <div class="box">
+         <a class="fab fa-telegram" href="https://telegram.org/"></a>
+         <h3>Мы в Telegram</h3>
+      </div>
+      <div class="box">
+         <a class="fab fa-vk" href="https://vk.com/"></a>
+         <h3>Мы в VK</h3>
+      </div>
+      <div class="box">
+         <a class="fab fa-youtube" href="https://www.youtube.com/"></a>
+         <h3>Мы в YouTube</h3>
+      </div>
+   </div>
+   <div class="credit">ООО <span>"Стар Кофе"</span><br> ИНН 00000000 | ОГРН 00000000 <br> Все права защищены <br> <br>© Strawberry.inc🍓</div>
+</section>
+<script src="js/script.js"></script>
+</body>
+</html>
